@@ -62,6 +62,7 @@ echo
 echo $red"##########################$green" WELCOME "$red###########################"
 echo
 figlet -f future "  BLACK CODER CRUSH" | lolcat
+echo $indigo"                        Shell Finder"
 echo $yellow"                    Coding By:"$cyan" Chemod-77"
 echo
 echo $red"##########################$green" WELCOME "$red###########################"
