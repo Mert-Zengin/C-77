@@ -51,7 +51,7 @@ echo
 echo
 echo
 echo
-echo $red"    Haloo"$green" $kontol"$red" Bangsat :'v Selamat Datang Di Tools Shell Finder Yg Jelek Ini :("
+echo $red"Haloo"$green" $kontol"$red" Bangsat :'v Selamat Datang Di Tools Shell Finder Yg Jelek Ini :("
 sleep 4
 clear
 echo
@@ -61,8 +61,8 @@ echo
 echo
 echo $red"##########################$green" WELCOME "$red###########################"
 echo
-figlet -f future " BLACK CODER CRUSH" | lolcat
-echo $green"                  Coding By:"$cyan" Chemod-77"
+figlet -f future "  BLACK CODER CRUSH" | lolcat
+echo $green"                   Coding By:"$cyan" Chemod-77"
 echo $red"##########################$green" WELCOME "$red###########################"
 echo $indigo"=============================================================="
 echo $white "╭─"$cyan"Masukan Target Anda"$white" Contoh:"$red" indo-cyber.zone.id" $white
