@@ -63,6 +63,7 @@ echo $red"##########################$green" WELCOME "$red#######################
 echo
 figlet -f future "  BLACK CODER CRUSH" | lolcat
 echo $yellow"                    Coding By:"$cyan" Chemod-77"
+echo
 echo $red"##########################$green" WELCOME "$red###########################"
 echo $indigo"=============================================================="
 echo $white "╭─"$cyan"Masukan Target Anda"$white" Contoh:"$red" indo-cyber.zone.id" $white
