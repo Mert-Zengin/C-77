@@ -105,7 +105,7 @@ echo
 if [ $tuyul = "B" ] || [ $tuyul = "b" ]
 then
 exit
-sh scan
+sh shell
 fi
 
 if [ $tuyul = "Q" ] || [ $tuyul = "q" ]
