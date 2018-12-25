@@ -24,8 +24,8 @@ class ZeroScann():
             
         # handle url website format
         site = args.domain
-        print("\033[96m[?] \033[0mStart Crawling...")
-        print("\033[96m[!] \033[0mWait a sec!","\n")
+        print("    \033[0mStart Scanning Website....")
+        print("    \033[0mSemoga Beruntung!","\n")
         time.sleep(3)
         if not site.startswith("http://"):
             site = "http://"+site
