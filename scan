@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 from urllib.request import Request, urlopen
 from urllib.error import URLError, HTTPError
 import argparse
@@ -25,9 +24,8 @@ class ZeroScann():
             
         # handle url website format
         site = args.domain
-        print("      \033[33;1m~ \033[96mScanner Website, Semoga Beruntung!! \033[33;1m~")
-        print("")
-	print("")
+        print("\033[96m[?] \033[0mStart Crawling...")
+        print("\033[96m[!] \033[0mWait a sec!","\n")
         time.sleep(3)
         if not site.startswith("http://"):
             site = "http://"+site
@@ -39,7 +37,7 @@ class ZeroScann():
             wlist = open(pathlist, "r")
             wordlist = wlist.readlines()
         except FileNotFound as e:
-            print("\033[91mUpss, Wordlist Tidak Ditemukan!\033[0m")
+            print("\033[91mUpss, Wordlist Tidak Di Temukan\033[0m")
             exit()
         finally:
             try:
@@ -72,30 +70,32 @@ class ZeroScann():
                         print("\033[96m[\033[90m{0}\033[96m]".format(time.strftime("%H:%M:%S")),"\033[92minfo :","\033[33m/"+psx,"\033[92mstatus:\033[33m",resp_codes[e.code])
                         
                 except URLError as e:
-                    sys.exit("     \033[31mDomain yg anda masukan eror !")
+                    sys.exit("     \033[31;1mUpss, Domain yg anda masukan eror!")
                 except Exception as er:
-                    print("   \n\033[93m[?] \033[0mKoneksi Anda Buruk \n\033[93m[?] ")
-                    print("   \033[93m[!] \033[0mKeluar Dari Program \033[93m[!]")
+                    print("    \033[31;1mKONEKSI INTERNET ANDA BURUK!")
+                    print("    \033[93mKeluar Dari Program")
                     time.sleep(3)
                     exit()
             except KeyboardInterrupt as e:
-                print("   \n\033[96m[?] \033[0mAnda Menekan Tombol Ctrl+C \n\033[96m[?]")
-                print("   \033[96m[!] \033[0mAnda Akan Keluar Dari Program \033[96m[!]")
+                print("    \n\033[96mCTRL+C Detected")
+                print("    \033[96mExit Program")
                 time.sleep(2)
                 exit()
         
         if found:
-            print("\033[31;1m[！] \033[34;1mFiles Yg Di Temukan\033[92m \033[31;1m[！]")
-            print("\n".join(found))
-            print("\033[96m[～] \033[0mTime Elasped: \033[35m%.2f\033[0m Seconds \033[96m[～]" % float(time.time()-starttime))
+            print("   \n\033[96mFiles Yg Di Temukan\033[92m")
+            print("   \n".join(found))
+            print("   \033[96mTime Elasped: \033[35m%.2f\033[0m Seconds" % float(time.time()-starttime))
         else:
-            print("\n\033[96m～ \033[0mCould Not Find Any Shell Backdoor \n\033[96m～")
-            print("\033[96m[!] \033[33;1mTime Elasped: \033[33m%.2f\033[0m Seconds \033[96m[!]" % float(time.time()-starttime))
+            print("   \n\033[96m[!] \033[0mCould Not Find Any Shell Backdoor")
+            print("   \033[96m[?] \033[0mTime Elasped: \033[33m%.2f\033[0m Seconds" % float(time.time()-starttime))
                 
     def banner():
         # just the screen display like this
         info = """\033[33m
-	"""
+	
+	
+              """
         return info
     print(banner())
                 
