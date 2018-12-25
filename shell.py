@@ -94,21 +94,10 @@ class ZeroScann():
     def banner():
         # just the screen display like this
         info = """\033[33m
-		
-		            
-				
-                   ###############################################
-		   ## Author     : Chemod-77/Chemod_zrd404      ##
-		   ## Team       : Black Coder Crush            ##
-		   ##              Aceh Cyber Team              ##
-		   ##              Subang Cyber Team            ##
-		   ## Website    : www.cyber-teach.zone.id      ##
-		   ##              www.indo-cyber.zone.id       ##
-		   ## Name Tools : Shell Finder Auto Bruteforce ##
-		   ###############################################
-				   
-				   
-              """
+	
+        Shell Backdor Scanner
+	
+	"""
         return info
     print(banner())
                 
