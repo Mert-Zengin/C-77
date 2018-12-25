@@ -84,7 +84,7 @@ class ZeroScann():
                 exit()
         
         if found:
-            print("\n\033[96m[+] \033[0mResult Found\033[92m")
+            print("\n\033[96m[+] \033[0mFiles Yg Di Temukan\033[92m")
             print("\n".join(found))
             print("\033[96m[?] \033[0mTime Elasped: \033[35m%.2f\033[0m Seconds" % float(time.time()-starttime))
         else:
