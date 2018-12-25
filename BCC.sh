@@ -100,6 +100,8 @@ gem install lolcat
 clear
 pkg install curl
 clear
+pkg install python3
+clear
 echo
 echo
 echo
