@@ -98,7 +98,8 @@ echo
 echo
 clear
 python3 scan -u $text -w wordlist.txt
-clear
+echo
+echo
 
 
 
