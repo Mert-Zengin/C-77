@@ -24,8 +24,8 @@ class ZeroScann():
             
         # handle url website format
         site = args.domain
-        print("\033[96m-----> \033[0mStart Sacnning Website...")
-        print("\033[96m-----> \033[0mSemoga Beruntung","\n")
+        print("\033[96m-----> \033[32;1mStart Sacnning Website.....")
+        print("\033[96m-----> \033[32;1mSemoga Beruntung.....","\n")
         time.sleep(3)
         if not site.startswith("http://"):
             site = "http://"+site
@@ -70,7 +70,7 @@ class ZeroScann():
                         print("\033[96m[\033[90m{0}\033[96m]".format(time.strftime("%H:%M:%S")),"\033[92minfo :","\033[33m/"+psx,"\033[92mstatus:\033[33m",resp_codes[e.code])
                         
                 except URLError as e:
-                    sys.exit("\033[31m[!] Upss, Domain yg anda masulan eror!")
+                    sys.exit("\033[31m Upss, Domain yg anda masukan eror！")
                 except Exception as er:
                     print("\n\033[93m[?] \033[0mKoneksi Internet Anda Buruk!")
                     print("\033[93m[!] \033[0mExit Program")
