@@ -61,7 +61,7 @@ echo
 echo
 echo $red"##########################$green" WELCOME "$red###########################"
 echo
-figlet -f future "ҳ̸Ҳ̸ҳBLACK CODER CRUSHҳ̸Ҳ̸ҳ" | lolcat
+figlet -f future "  BLACK CODER CRUSH" | lolcat
 echo $yellow"                    Coding By:"$cyan" Chemod-77"
 echo
 echo $red"##########################$green" WELCOME "$red###########################"
