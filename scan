@@ -77,18 +77,19 @@ class ZeroScann():
                     time.sleep(3)
                     exit()
             except KeyboardInterrupt as e:
-                print("    \n\033[96mCTRL+C Detected")
-                print("    \033[96mExit Program")
+                print("    \033[31;1mAnda Menekan Tombol CTRL+C")
+                print("    \033[31;1mAnda Akan Keluar Dari Program")
                 time.sleep(2)
                 exit()
         
         if found:
-            print("   \n\033[96mFiles Yg Di Temukan\033[92m")
+            print("   \n\033[96m")
+	    print("   \033[36;1mFiles Yg Di Temukan\033[92m")
             print("   \n".join(found))
-            print("   \033[96mTime Elasped: \033[35m%.2f\033[0m Seconds" % float(time.time()-starttime))
+            print("   \033[36;1mTime Elasped: \033[35m%.2f\033[0m Seconds" % float(time.time()-starttime))
         else:
-            print("   \n\033[96m[!] \033[0mCould Not Find Any Shell Backdoor")
-            print("   \033[96m[?] \033[0mTime Elasped: \033[33m%.2f\033[0m Seconds" % float(time.time()-starttime))
+            print("   \n\033[96mCould Not Find Any Shell Backdoor")
+            print("   \033[96mTime Elasped: \033[33m%.2f\033[0m Seconds" % float(time.time()-starttime))
                 
     def banner():
         # just the screen display like this
