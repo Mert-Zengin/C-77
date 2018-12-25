@@ -57,6 +57,7 @@ echo $red"        Jangan lupa kunjungi website gue ya :v"
 sleep 3
 echo $cyan"             www.indo-cyber.zone.id"
 echo $cyan"             www.cyber-teach.zone.id"
+sleep 3
 clear
 echo
 echo
@@ -66,7 +67,7 @@ echo
 echo $red"##########################$green" WELCOME "$red###########################"
 echo
 figlet -f future "   BLACK CODER CRUSH" | lolcat
-echo $green"          Coding By:"$cyan" Chemod-77
+echo $green"          Coding By:"$cyan" Chemod-77"
 echo $red"##########################$green" WELCOME "$red###########################"
 echo $indigo"=============================================================="
 echo $white "╭─"$cyan"Masukan Target Anda"$white" Contoh:"$red" indo-cyber.zone.id" $white
