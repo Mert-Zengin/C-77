@@ -97,10 +97,8 @@ fi
 echo
 echo
 clear
-python3 shell.py -u $text -w wordlist.txt
+python3 scan -u $text -w wordlist.txt
 clear
-echo
-echo
 
 
 
