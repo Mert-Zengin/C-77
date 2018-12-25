@@ -86,7 +86,7 @@ class ZeroScann():
             print("   \n\033[96m")
 	    print("   \033[36;1mFiles Yg Di Temukan\033[92m")
             print("   \n".join(found))
-            print("   \033[36;1mTime Elasped: \033[35m%.2f\033[0m Seconds" % float(time.time()-starttime))
+            print("   \033[36;1mTime Elasped: \033[35m%.2f\033[36;1m Seconds" % float(time.time()-starttime))
         else:
             print("   \n\033[96mCould Not Find Any Shell Backdoor")
             print("   \033[96mTime Elasped: \033[33m%.2f\033[0m Seconds" % float(time.time()-starttime))
