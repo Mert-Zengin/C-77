@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-# Code by PosiX
-
 from urllib.request import Request, urlopen
 from urllib.error import URLError, HTTPError
 import argparse
@@ -100,14 +98,14 @@ class ZeroScann():
 		            
 				
                    ###############################################
-				   ## Author     : Chemod-77/Chemod_zrd404      ##
-				   ## Team       : Black Coder Crush            ##
-				   ##              Aceh Cyber Team              ##
-				   ##              Subang Cyber Team            ##
-				   ## Website    : www.cyber-teach.zone.id      ##
-				   ##              www.indo-cyber.zone.id       ##
-				   ## Name Tools : Shell Finder Auto Bruteforce ##
-				   ###############################################
+		   ## Author     : Chemod-77/Chemod_zrd404      ##
+		   ## Team       : Black Coder Crush            ##
+		   ##              Aceh Cyber Team              ##
+		   ##              Subang Cyber Team            ##
+		   ## Website    : www.cyber-teach.zone.id      ##
+		   ##              www.indo-cyber.zone.id       ##
+		   ## Name Tools : Shell Finder Auto Bruteforce ##
+		   ###############################################
 				   
 				   
               """
