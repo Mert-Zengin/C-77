@@ -71,25 +71,25 @@ class ZeroScann():
                         print("\033[96m[\033[90m{0}\033[96m]".format(time.strftime("%H:%M:%S")),"\033[92minfo :","\033[33m/"+psx,"\033[92mstatus:\033[33m",resp_codes[e.code])
                         
                 except URLError as e:
-                    sys.exit("\033[31m[!] Upss, No Internet Connection")
+                    sys.exit("  \033[31mDomain yg anda masukan eror !")
                 except Exception as er:
-                    print("\n\033[93m[?] \033[0mYour Connection Is Bad")
-                    print("\033[93m[!] \033[0mExit Program")
+                    print("   \n\033[93m[?] \033[0mKoneksi Anda Buruk \n\033[93m[?] ")
+                    print("   \033[93m[!] \033[0mKeluar Dari Program \033[93m[!]")
                     time.sleep(3)
                     exit()
             except KeyboardInterrupt as e:
-                print("\n\033[96m[?] \033[0mCTRL+C Detected")
-                print("\033[96m[!] \033[0mExit Program")
+                print("   \n\033[96m[?] \033[0mAnda Menekan Tombol Ctrl+C \n\033[96m[?]")
+                print("   \033[96m[!] \033[0mAnda Akan Keluar Dari Program \033[96m[!]")
                 time.sleep(2)
                 exit()
         
         if found:
-            print("\n\033[96m[+] \033[0mFiles Yg Di Temukan\033[92m")
+            print("\033[31;1m[！] \033[0mFiles Yg Di Temukan\033[92m \033[31;1m[！]")
             print("\n".join(found))
-            print("\033[96m[?] \033[0mTime Elasped: \033[35m%.2f\033[0m Seconds" % float(time.time()-starttime))
+            print("\033[96m[～] \033[0mTime Elasped: \033[35m%.2f\033[0m Seconds \033[96m[～]" % float(time.time()-starttime))
         else:
-            print("\n\033[96m[!] \033[0mCould Not Find Any Shell Backdoor")
-            print("\033[96m[?] \033[0mTime Elasped: \033[33m%.2f\033[0m Seconds" % float(time.time()-starttime))
+            print("\n\033[96m～ \033[0mCould Not Find Any Shell Backdoor \n\033[96m～")
+            print("\033[96m[!] \033[0mTime Elasped: \033[33m%.2f\033[0m Seconds \033[96m[!]" % float(time.time()-starttime))
                 
     def banner():
         # just the screen display like this
