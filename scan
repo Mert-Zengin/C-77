@@ -25,8 +25,8 @@ class ZeroScann():
             
         # handle url website format
         site = args.domain
-        print("\033[96mScanner Website \033[0mSemoga Beruntung!! ")
-        print("\033[96m[!] \033[0m","\nBlack Coder Crush")
+        print("\033[33;1m[～] \033[96mScanner Website, Semoga Beruntung!! ")
+        print("\033[33;1m[!] \033[96mBlack Coder Crush")
         time.sleep(3)
         if not site.startswith("http://"):
             site = "http://"+site
@@ -84,12 +84,12 @@ class ZeroScann():
                 exit()
         
         if found:
-            print("\033[31;1m[！] \033[0mFiles Yg Di Temukan\033[92m \033[31;1m[！]")
+            print("\033[31;1m[！] \033[34;1mFiles Yg Di Temukan\033[92m \033[31;1m[！]")
             print("\n".join(found))
             print("\033[96m[～] \033[0mTime Elasped: \033[35m%.2f\033[0m Seconds \033[96m[～]" % float(time.time()-starttime))
         else:
             print("\n\033[96m～ \033[0mCould Not Find Any Shell Backdoor \n\033[96m～")
-            print("\033[96m[!] \033[0mTime Elasped: \033[33m%.2f\033[0m Seconds \033[96m[!]" % float(time.time()-starttime))
+            print("\033[96m[!] \033[33;1mTime Elasped: \033[33m%.2f\033[0m Seconds \033[96m[!]" % float(time.time()-starttime))
                 
     def banner():
         # just the screen display like this
