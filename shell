@@ -51,13 +51,8 @@ echo
 echo
 echo
 echo
-echo $red"    Haloo"$green" $kontol"$red" Selamat Datang Di Tools Shell Finder"
+echo $red"    Haloo"$green" $kontol"$red" Bangsat :'v Selamat Datang Di Tools Shell Finder Yg Jelek Ini :("
 sleep 4
-echo $red"        Jangan lupa kunjungi website gue ya :v"
-sleep 3
-echo $cyan"             www.indo-cyber.zone.id"
-echo $cyan"             www.cyber-teach.zone.id"
-sleep 3
 clear
 echo
 echo
@@ -66,8 +61,8 @@ echo
 echo
 echo $red"##########################$green" WELCOME "$red###########################"
 echo
-figlet -f future "   BLACK CODER CRUSH" | lolcat
-echo $green"          Coding By:"$cyan" Chemod-77"
+figlet -f future " BLACK CODER CRUSH" | lolcat
+echo $green"                  Coding By:"$cyan" Chemod-77"
 echo $red"##########################$green" WELCOME "$red###########################"
 echo $indigo"=============================================================="
 echo $white "╭─"$cyan"Masukan Target Anda"$white" Contoh:"$red" indo-cyber.zone.id" $white
@@ -102,93 +97,6 @@ python scan -u $text -w wordlist.txt
 echo
 echo
 echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-echo
-exit
-clear
 echo $indigo"["$red"B"$indigo"]"$white"back "$indigo"["$red"Q"$indigo"]"$white"Quit"
 read -p "[B/Q] " tuyul
 echo
@@ -196,7 +104,7 @@ clear
 echo
 if [ $tuyul = "B" ] || [ $tuyul = "b" ]
 then
-sh 77
+sh scan
 fi
 
 if [ $tuyul = "Q" ] || [ $tuyul = "q" ]
