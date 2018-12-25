@@ -14,14 +14,14 @@ class ZeroScann():
         
     def scan(self):
         # argument parser like shit
-        parser = argparse.ArgumentParser(prog="PosiX.py", description="Simple Find Shell in Website")
+        parser = argparse.ArgumentParser(prog="scan", description="Simple Find Shell in Website")
         parser.add_argument("-u", dest="domain", help="your url")
         parser.add_argument("-w", dest="wordlist", help="your wordlsit")
         args = parser.parse_args()
         if not args.domain:
-            sys.exit("\033[36musage: shell.py -u example.com -w wordlist.txt")
+            sys.exit("\033[36musage: scan -u example.com -w wordlist.txt")
         if not args.wordlist:
-            sys.exit("\033[36musage: shell.py -u example.com -w wordlist.txt")
+            sys.exit("\033[36musage: scan -u example.com -w wordlist.txt")
             
         # handle url website format
         site = args.domain
@@ -94,9 +94,6 @@ class ZeroScann():
     def banner():
         # just the screen display like this
         info = """\033[33m
-	
-        Shell Backdor Scanner
-	
 	"""
         return info
     print(banner())
