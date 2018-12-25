@@ -104,7 +104,6 @@ clear
 echo
 if [ $tuyul = "B" ] || [ $tuyul = "b" ]
 then
-exit
 sh shell
 fi
 
