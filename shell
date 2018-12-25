@@ -105,6 +105,7 @@ clear
 echo
 if [ $tuyul = "B" ] || [ $tuyul = "b" ]
 then
+exit
 sh scan
 fi
 
