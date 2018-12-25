@@ -25,8 +25,8 @@ class ZeroScann():
             
         # handle url website format
         site = args.domain
-        print("\033[96m[?] \033[0mSemoga Beruntung!! ")
-        print("\033[96m[!] \033[0mwww.cyber-teach.zone.id!","\n")
+        print("\033[96mScanner Website \033[0mSemoga Beruntung!! ")
+        print("\033[96m[!] \033[0m","\nBlack Coder Crush")
         time.sleep(3)
         if not site.startswith("http://"):
             site = "http://"+site
@@ -38,7 +38,7 @@ class ZeroScann():
             wlist = open(pathlist, "r")
             wordlist = wlist.readlines()
         except FileNotFound as e:
-            print("\033[91mUpss, Wordlist Not Found!\033[0m")
+            print("\033[91mUpss, Wordlist Tidak Ditemukan!\033[0m")
             exit()
         finally:
             try:
