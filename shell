@@ -100,8 +100,22 @@ clear
 python3 scan -u $text -w wordlist.txt
 echo
 echo
+echo $indigo"["$red"B"$indigo"]"$white"back "$indigo"["$red"Q"$indigo"]"$white"Quit"
+read -p "[B/Q] " tuyul
+echo
+clear
+echo
+if [ $tuyul = "B" ] || [ $tuyul = "b" ]
+then
+sh 77
+fi
 
-
+if [ $tuyul = "Q" ] || [ $tuyul = "q" ]
+then
+echo $red " Terimakasih $kontol Mukanya Yg Kek Kontol Sudah Menggunakan Tools Kami :v"
+exit
+clear
+fi
 
 
 
