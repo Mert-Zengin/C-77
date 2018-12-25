@@ -97,7 +97,6 @@ python scan -u $text -w wordlist.txt
 echo
 echo
 echo
-exit
 echo $indigo"["$red"B"$indigo"]"$white"back "$indigo"["$red"Q"$indigo"]"$white"Quit"
 read -p "[B/Q] " tuyul
 echo
