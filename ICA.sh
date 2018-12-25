@@ -119,4 +119,4 @@ echo
 toilet -f future " Wellcome to my tools" | lolcat
 sleep 5
 clear
-sh 77
+sh shell
