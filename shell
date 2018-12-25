@@ -62,7 +62,7 @@ echo
 echo $red"##########################$green" WELCOME "$red###########################"
 echo
 figlet -f future "  BLACK CODER CRUSH" | lolcat
-echo $green"                   Coding By:"$cyan" Chemod-77"
+echo $yellow"                    Coding By:"$cyan" Chemod-77"
 echo $red"##########################$green" WELCOME "$red###########################"
 echo $indigo"=============================================================="
 echo $white "╭─"$cyan"Masukan Target Anda"$white" Contoh:"$red" indo-cyber.zone.id" $white
@@ -109,7 +109,7 @@ fi
 
 if [ $tuyul = "Q" ] || [ $tuyul = "q" ]
 then
-echo $red "$kontol anak kontol byee byee :'v :v"
+echo $red "    $kontol anak kontol byee byee awokwokwok :'v"
 exit
 clear
 fi
