@@ -65,9 +65,9 @@ class ZeroScann():
                     
                 except HTTPError as e:
                     if e.code == 404:
-                        print("\033[96m[\033[90m{0}\033[96m]".format(time.strftime("%H:%M:%S")),"\033[91merror:","\033[0m/"+psx)
+                        print("\033[96m------------\033[33;1m>,"\033[91merror:","\033[0m/"+psx)
                     else:
-                        print("\033[96m[\033[90m{0}\033[96m]".format(time.strftime("%H:%M:%S")),"\033[92minfo :","\033[33m/"+psx,"\033[92mstatus:\033[33m",resp_codes[e.code])
+                        print("\033[96m------------\033[33;1m>,"\033[92minfo :","\033[33m/"+psx,"\033[92mstatus:\033[33m",resp_codes[e.code])
                         
                 except URLError as e:
                     sys.exit("\033[31m Upss, Domain yg anda masukan eror！")
