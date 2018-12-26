@@ -60,7 +60,7 @@ class ZeroScann():
                 time.sleep(0.1)
                 try:
                     connection = urlopen(req)
-                    print("\033[96m[\033[90m{0}\033[96m]".format(time.strftime("%H:%M:%S")),"\033[92mfound:","\033[0m/"+psx)
+                    print("\033[96m------------\033[33;1m> \033[92mfound:","\033[0m/"+psx)
                     found.append(url)
                     
                 except HTTPError as e:
