@@ -66,12 +66,14 @@ echo $yellow"                    Coding By:"$cyan" Chemod-77"
 echo
 echo $red"##########################$green" WELCOME "$red###########################"
 echo $indigo"=============================================================="
-echo $white "╭─"$cyan"Masukan Target Anda"$white" Contoh:"$red" indo-cyber.zone.id" $white
+echo $white " Contoh:"$red" indo-cyber.zone.id" $white
+echo $white "╭─"$cyan"Masukan Target Anda"$white
 read -p " ╰─$ "  text
 echo
 echo
 echo
-echo $white "╭─"$cyan"Masukan Wordlist Anda."$red" Klik Enter Jika Tidak Punya Wordlist!" $white
+echo $white " Note:"$red" Klik Enter Jika Tidak Punya Wordlist!" $white
+echo $white "╭─"$cyan"Masukan Wordlist Anda."$white
 read -p " ╰─$ "  list
 echo
 echo
@@ -118,32 +120,19 @@ echo
 echo
 clear
 echo
-echo $green"Scan Wordlist Defulat Tools Shell-Finder....."
-sleep 4
-echo
-echo
-python scan -u $text -w wordlist.txt
-echo
-echo
-echo $indigo"["$red"B"$indigo"]"$white"back "$indigo"["$red"Q"$indigo"]"$white"Quit"
-read -p "[B/Q] " tuyul
-echo
-clear
-echo
-fi
-
-#Wordlist 2
-if [ $list =  ] || [ $list =  ]
-then
-echo
-echo
-clear
 echo
 echo $green"Pastikan Wordlist Di Simpen Di Luar Folder Memory Internal"
 sleep 4
 echo
 echo
 python scan -u $text -w /sdcard/$list
+echo
+echo
+echo $green"Scan Wordlist Defulat Tools Shell-Finder....."
+sleep 4
+echo
+echo
+python scan -u $text -w wordlist.txt
 echo
 echo
 echo $indigo"["$red"B"$indigo"]"$white"back "$indigo"["$red"Q"$indigo"]"$white"Quit"
