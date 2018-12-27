@@ -77,7 +77,7 @@ echo $green"  Pakai Wordlist Defulat Atau Wordlist Sendiri?"
 echo
 echo $red"  ╭─"$cyan"["$green"A"$cyan"]"$yellow"."$white" Wordlist Defulat"$green 
 echo $red"  ╰─"$cyan"["$green"B"$cyan"]"$yellow"."$white" Wordlist Sendiri"$green
-read -p "             [+]>>>>> " list
+read -p "         [+]>>>>> " list
 echo
 echo
 echo
