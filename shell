@@ -103,7 +103,7 @@ if [ $list = "B" ] || [ $list = "b" ]
 then
 echo
 echo $red"  Pastikan Wordlist Simpan Di Luar Forder Memory Internal"$cyan
-read -p "        [+]>>>>> " list2
+read -p "       [+]>>>>> " list2
 echo
 clear
 python scan -u $text -w /sdcard/$list2
