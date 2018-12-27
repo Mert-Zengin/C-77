@@ -72,36 +72,15 @@ read -p " ╰─$ "  text
 echo
 echo
 echo
+echo
 echo $green"  Pakai Wordlist Defulat Atau Wordlist Sendiri?"
 echo
-echo $cyan"   ["$green"A"$cyan"]"$yellow"."$white" Wordlist Defulat"$green
-echo $cyan"   ["$green"B"$cyan"]"$yellow"."$white" Wordlist Sendiri"$green
+echo $cyan"  ["$green"A"$cyan"]"$yellow"."$white" Wordlist Defulat"$green
+echo $cyan"  ["$green"B"$cyan"]"$yellow"."$white" Wordlist Sendiri"$green
 read -p "     [+]>>>>> " list
 echo
 echo
 echo
-
-#Targe
-if [ $text =  ] || [ $text =  ]
-then
-clear
-echo
-echo
-echo
-echo
-echo
-echo $red"        KOLOM TIDAK BOLEH KOSONG!!!"
-sleep 4
-echo
-echo
-sh shell
-clear
-echo
-echo
-echo
-echo
-echo
-fi
 
 #Wordlist 1
 if [ $list = "A" ] || [ $list = "a" ]
@@ -120,7 +99,7 @@ echo
 fi
 
 #Wordlist 2
-if [ $list = "D" ] || [ $list = "d" ]
+if [ $list = "B" ] || [ $list = "b" ]
 then
 echo
 echo $red"    Pastikan Wordlist Di Luar Forder Memory Internal"$cyan
@@ -150,11 +129,3 @@ echo $red "    $kontol anak kontol byee byee awokwokwok :'v"
 exit
 clear
 fi
-
-
-
-
-
-
-
-
