@@ -105,7 +105,7 @@ echo
 echo $red"  Pastikan Wordlist Simpan Di Luar Folder Memory Internal"$cyan
 echo
 echo $cyan"        ╭─"$yellow"Masukan Nama Wordlistnya!"$cyan
-read -p "         ╰─[+]>>>>> " list2
+read -p "        ╰─[+]>>>>> " list2
 echo
 clear
 python scan -u $text -w /sdcard/$list2
