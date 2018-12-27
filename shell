@@ -72,9 +72,11 @@ read -p " ╰─$ "  text
 echo
 echo
 echo
-echo $white " Note:"$red" Klik Enter Jika Tidak Punya Wordlist!" $white
-echo $white "╭─"$cyan"Masukan Wordlist Anda."$white
-read -p " ╰─$ "  list
+echo $green"  Pakai Wordlist Defulat Atau Wordlist Sendiri?"
+echo
+echo $cyan"["$green"A"$cyan"]"$yellow"."$white" Wordlist Defulat"$green
+echo $cyan"["$green"B"$cyan"]"$yellow"."$white" Wordlist Sendiri"$green
+read -p "     [+]>>>>> " list
 echo
 echo
 echo
@@ -114,25 +116,31 @@ clear
 echo
 
 #Wordlist 1
-if [ $list =  ] || [ $list =  ]
+if [ $list = "A" ] || [ $list = "a" ]
 then
 echo
+clear
+python scan -u $text -w wordlist.txt
+echo
+echo
+echo
+echo $indigo"["$red"B"$indigo"]"$white"back "$indigo"["$red"Q"$indigo"]"$white"Quit"
+read -p "[B/Q] " tuyul
 echo
 clear
 echo
+fi
+
+#Wordlist 2
+if [ $list = "D" ] || [ $list = "d" ]
+then
 echo
-echo $green"Pastikan Wordlist Di Simpen Di Luar Folder Memory Internal"
-sleep 4
+echo $red"    Pastikan Wordlist Di Luar Forder Memory Internal"$cyan
+read -p "     [+]>>>>> " list2
 echo
+clear
+python scan -u $text -w /sdcard/$list2
 echo
-python scan -u $text -w /sdcard/$list
-echo
-echo
-echo $green"Scan Wordlist Defulat Tools Shell-Finder....."
-sleep 4
-echo
-echo
-python scan -u $text -w wordlist.txt
 echo
 echo
 echo $indigo"["$red"B"$indigo"]"$white"back "$indigo"["$red"Q"$indigo"]"$white"Quit"
