@@ -74,8 +74,8 @@ echo
 echo
 echo $green"  Pakai Wordlist Defulat Atau Wordlist Sendiri?"
 echo
-echo $cyan"["$green"A"$cyan"]"$yellow"."$white" Wordlist Defulat"$green
-echo $cyan"["$green"B"$cyan"]"$yellow"."$white" Wordlist Sendiri"$green
+echo $cyan"   ["$green"A"$cyan"]"$yellow"."$white" Wordlist Defulat"$green
+echo $cyan"   ["$green"B"$cyan"]"$yellow"."$white" Wordlist Sendiri"$green
 read -p "     [+]>>>>> " list
 echo
 echo
@@ -102,18 +102,6 @@ echo
 echo
 echo
 fi
-echo
-echo
-clear
-python scan -u $text -w wordlist.txt
-echo
-echo
-echo
-echo $indigo"["$red"B"$indigo"]"$white"back "$indigo"["$red"Q"$indigo"]"$white"Quit"
-read -p "[B/Q] " tuyul
-echo
-clear
-echo
 
 #Wordlist 1
 if [ $list = "A" ] || [ $list = "a" ]
