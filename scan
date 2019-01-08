@@ -27,7 +27,7 @@ class ZeroScann():
         print("\033[96m-----> \033[32;1mStart Sacnning Website.....")
         print("\033[96m-----> \033[32;1mSemoga Beruntung.....","\n")
         time.sleep(3)
-        if not site.startswith(""):
+        if not site.startswith("http://"):
             site = "http://"+site
         if not site.endswith("/"):
             site = site+"/"
